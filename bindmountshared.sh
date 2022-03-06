@@ -20,7 +20,7 @@ for d in $(find /hdd/Obsidian -maxdepth 1 -type d); do
      "/hdd/Obsidian/Plugin Development") continue
 	;;
 	esac
-    rm -r "$d/__shared"
+    ln -s "/hdd/Obsidian/_shared/_shared/" "$d/__shared"
     echo "$d"
 done
 
