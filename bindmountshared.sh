@@ -20,8 +20,7 @@ for d in $(find /hdd/Obsidian -maxdepth 1 -type d); do
      "/hdd/Obsidian/Plugin Development") continue
 	;;
 	esac
-    mkdir -p "$d/__shared"
-    sudo /usr/bin/mount --bind "/hdd/Obsidian/_shared/_shared/" "$d/__shared/"
+    rm -r "$d/__shared"
     echo "$d"
 done
 
